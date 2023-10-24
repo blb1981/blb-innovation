@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar bg-primary navbar-expand-md fixed-top shadow">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="./images/blb-logo-light.svg" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu"
+          aria-controls="mobileMenu"
+        >
+          Button
+        </button>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link link-light" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="#tech">Tech Stack</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="#contact">Contact Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero bg-primary text-light" id="home">
+        <div class="container">
+          <div class="row align-content-center pb-5" style="padding-top: 6rem">
+            <div class="col-md-6">
+              <h1 class="display-1">Hello...</h1>
+              <p class="lead">
+                My name is ... Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Necessitatibus, cum dolorum? Consequuntur
+                tempora soluta dicta.
+              </p>
+              <p>
+                <a class="btn btn-outline-light me-3" href="#tech"
+                  >Learn More</a
+                >
+                <a class="btn btn-light" href="#contact">Contact Me</a>
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img
+                class="img-fluid rounded-3 shadow-lg"
+                src="./images/me-square.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack -->
+      <section class="tech" id="tech">
+        <div class="container">
+          <h2 class="display-3 text-center">My Tech Stack</h2>
+          <p class="text-center">
+            Here are my favorite langues and Lorem ipsum, dolor sit amet
+            consectetur adipisicing elit. Doloremque, culpa!
+          </p>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-3 text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Front End</h5>
+                  <p class="card-text">
+                    And a little more something here blah blah blah Lorem ipsum
+                    dolor sit amet.
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <img
+                        class="img-fluid"
+                        src="./images/tech/javascript.png"
+                        alt="JavaScript logo"
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        class="img-fluid"
+                        src="./images/tech/reactjs.png"
+                        alt="JavaScript logo"
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        class="img-fluid"
+                        src="./images/tech/nextjs.png"
+                        alt="JavaScript logo"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3 text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Back End</h5>
+                  <p class="card-text">
+                    And a little more something here blah blah blah Lorem ipsum
+                    dolor sit amet.
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <img
+                        class="img-fluid"
+                        src="./images/tech/nodejs.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        class="img-fluid"
+                        src="./images/tech/php.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        class="img-fluid"
+                        src="./images/tech/laravel.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-3 text-center">
+                <div class="card-body">
+                  <h5 class="card-title">Styling</h5>
+                  <p class="card-text">
+                    And a little more something here blah blah blah Lorem ipsum
+                    dolor sit amet.
+                  </p>
+                  <div class="row">
+                    <div class="col">
+                      <img
+                        src="./images/tech/css3.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        src="./images/tech/material-ui.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="col">
+                      <img
+                        src="./images/tech/bootstrap.png"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="projects bg-light text-center" id="projects">
+        <div class="container">
+          <h2 class="display-3">My Projects</h2>
+          <p>
+            Here are various projects Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ad magni soluta ab et odit reiciendis!
+          </p>
+          <div class="row">
+            <div class="col-md-6">
+              <!-- Start project -->
+              <div class="card mb-3">
+                <img
+                  src="images/projects/full-stack-tasks.png"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Full Stack Tasks</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quisquam doloribus expedita itaque harum quasi
+                    exercitationem eaque, natus quaerat corrupti ipsa!
+                  </p>
+                  <div class="card-text d-flex justify-content-evenly mb-3">
+                    <a href="#" class="btn btn-outline-primary">View code</a>
+                    <a href="#" class="btn btn-outline-primary"
+                      >View Live Site</a
+                    >
+                  </div>
+                  <div class="card-text text-center">
+                    <span class="badge rounded-pill text-bg-success"
+                      >Laravel</span
+                    >
+                    <span class="badge rounded-pill text-bg-success"
+                      >React</span
+                    >
+                    <span class="badge rounded-pill text-bg-success"
+                      >Full-stack</span
+                    >
+                    <span class="badge rounded-pill text-bg-success"
+                      >MaterialUI</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!-- Start project -->
+              <div class="card mb-3">
+                <img
+                  src="images/projects/billiard-ball-quiz.png"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Billiard Ball Color Quiz</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quisquam doloribus expedita itaque harum quasi
+                    exercitationem eaque, natus quaerat corrupti ipsa!
+                  </p>
+                  <div class="card-text d-flex justify-content-evenly mb-3">
+                    <a href="#" class="btn btn-outline-primary">View code</a>
+                    <a href="#" class="btn btn-outline-primary"
+                      >View Live Site</a
+                    >
+                  </div>
+                  <div class="card-text text-center">
+                    <span class="badge rounded-pill text-bg-success"
+                      >Laravel</span
+                    >
+                    <span class="badge rounded-pill text-bg-success"
+                      >React</span
+                    >
+                    <span class="badge rounded-pill text-bg-success"
+                      >Full-stack</span
+                    >
+                    <span class="badge rounded-pill text-bg-success"
+                      >MaterialUI</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!-- Start project -->
+              <div class="card mb-3">
+                <img
+                  src="images/projects/full-stack-tasks.png"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Full Stack Tasks</h5>
+                  <p class="card-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Quisquam doloribus expedita itaque harum quasi
+                    exercitationem eaque, natus quaerat corrupti ipsa!
+                  </p>
+                  <div class="card-text d-flex justify-content-evenly mb-3">
+                    <a href="#" class="btn btn-outline-primary">View code</a>
+                    <a href="#" class="btn btn-outline-primary"
+                      >View Live Site</a
+                    >
+                  </div>
+                  <div class="card-text text-center">
+                    <span class="badge rounded-pill text-bg-success"
+                      >Laravel</span
+                    >
+                    <span class="badge rounded-pill text-bg-success"
+                      >React</span
+                    >
+                    <span class="badge rounded-pill text-bg-success"
+                      >Full-stack</span
+                    >
+                    <span class="badge rounded-pill text-bg-success"
+                      >MaterialUI</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="display-3 text-center">About Me</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+            dolorum veniam facilis cum est, eligendi harum perspiciatis
+            accusantium officia et?
+          </p>
+          <ul>
+            <li>lorem5</li>
+            <li>lorem5</li>
+            <li>lorem5</li>
+          </ul>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+            sapiente architecto accusamus nemo eveniet ipsam libero eum
+            laboriosam iure excepturi?
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact form -->
+      <section class="contact bg-light text-center" id="contact">
+        <div class="container">
+          <h2 class="display-3">Contact Me</h2>
+          <hr />
+          <p>
+            I'd love to get in touch Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Repudiandae, in.
+          </p>
+          <form class="m-auto" style="max-width: 30rem">
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Your name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Your email address"
+              />
+            </div>
+            <div class="mb-3">
+              <textarea
+                name="message"
+                id="message"
+                class="form-control"
+                placeholder="Your message"
+              ></textarea>
+            </div>
+            <div class="mb-3 d-grid">
+              <button class="btn btn-primary">Contact me</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-3">
+      <div class="container">asdfasdf</div>
+    </footer>
+
+    <!-- Mobile menu -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="mobileMenu"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
