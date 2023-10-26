@@ -1,12 +1,14 @@
 <?php
 
+echo 'hey';
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use Dotenv\Dotenv;
 
 require '../vendor/autoload.php';
 
-$dotenv = Dotenv::createImmutable('../');
+$dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
 
@@ -16,7 +18,7 @@ $dotenv->load();
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
-$recaptcha_response = $_POST['g-recaptcha-response'];
+// $recaptcha_response = $_POST['g-recaptcha-response'];
 
 
 $mail = new PHPMailer(true);
