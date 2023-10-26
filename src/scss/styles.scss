@@ -31,6 +31,20 @@ $border-radius-pill: 0;
 
 .blb-hero {
   padding-top: 7rem;
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  // background-image: linear-gradient(
+  //     to right,
+  //     rgba($primary, 0.93),
+  //     rgba($primary, 0.93)
+  //   ),
+  //   url('../images/nubelson-fernandes-UcYBL5V0xWQ-unsplash.jpg');
+  // background-position: center;
+  // background-size: cover;
+}
+
+.blb-hero-content {
 }
 
 .blb-hero-content,
@@ -43,6 +57,30 @@ $border-radius-pill: 0;
 .blb-me-img {
   width: min(100%, 20rem);
   display: inline;
+  position: relative;
+  margin: 5px;
+  // border: 0.25rem solid $light;
+}
+
+.blb-me-img-container {
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .blb-me-img {
+    border: 0;
+  }
+
+  .blb-me-img-container::before {
+    content: '';
+    position: absolute;
+    border: 0.25rem solid $light;
+    border-radius: 2px;
+    width: min(100%, 20rem);
+    height: 100%;
+    top: 1.5rem;
+    left: 1.5rem;
+  }
 }
 
 .blb-section {

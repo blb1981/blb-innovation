@@ -7,8 +7,8 @@
     
     
     <script async src="https://www.google.com/recaptcha/api.js"></script>
-    <script type="module" crossorigin src="/assets/main-e04846ce.js"></script>
-    <link rel="stylesheet" href="/assets/index-331e52f3.css">
+    <script type="module" crossorigin src="/assets/main-86b8a953.js"></script>
+    <link rel="stylesheet" href="/assets/index-50db8ca0.css">
   </head>
   <body>
     <!-- Navbar -->
@@ -28,16 +28,18 @@
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link link-light" href="#home">Home</a>
+              <a class="nav-link link-light blb-underline-effect" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-light" href="#about">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link link-light" href="#tech">Tech Stack</a>
             </li>
             <li class="nav-item">
               <a class="nav-link link-light" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link-light" href="#about">About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link link-light" href="#contact">Contact Me</a>
@@ -56,6 +58,7 @@
           >
             <div class="col-md-7 mb-3">
               <h1 class="display-1">Hello...</h1>
+
               <p class="lead">
                 My name is Brandon. Welcome to my portfolio website!
               </p>
@@ -64,25 +67,50 @@
                 development.
               </p>
               <p>
-                <a class="btn btn-outline-light me-3 mb-2" href="#tech"
+                <a class="btn btn-outline-light me-3 mb-2" href="#about"
                   >Learn More</a
                 >
                 <a class="btn btn-light mb-2" href="#contact">Contact Me</a>
               </p>
             </div>
             <div class="col-md-5">
-              <img
-                class="blb-me-img img-fluid shadow d-block m-auto img-thumbnail"
-                src="/assets/me-square-3186d44d.png"
-                alt=""
-              />
+              <div class="blb-me-img-container">
+                <img
+                  class="blb-me-img img-fluid shadow d-block m-auto"
+                  src="/assets/me-square-3186d44d.png"
+                  alt=""
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- About -->
+      <section class="blb-about blb-section" id="about">
+        <div class="container about-content">
+          <h2 class="display-3 text-center mb-3">About Me</h2>
+          <p class="mb-3">
+            Hi there! I am a 12+ year veteran in the IT industry. I have been
+            learning web development on the side for a few of those years. Now I
+            am anxious to make the jump into a web development career!
+          </p>
+          <p>
+            I'm a front-end developer that specializes in JavaScript,
+            TypeScript, and React. Lately I have been focused more on learning
+            and building full-stack applications using PHP or NodeJS on the
+            server side.
+          </p>
+          <p>
+            Outside of work, some of my favorite things to do are spending time
+            with my family, watching or playing sports (baseball and racing
+            mainly), playing pool, and playing the guitar.
+          </p>
+        </div>
+      </section>
+
       <!-- Tech Stack -->
-      <section class="blb-tech blb-section text-center" id="tech">
+      <section class="blb-tech blb-section text-center bg-light" id="tech">
         <div class="container">
           <h2 class="display-3 mb-3">Tech Stack</h2>
           <p class="mb-3">
@@ -208,17 +236,14 @@
       </section>
 
       <!-- Projects -->
-      <section
-        class="blb-projects blb-section bg-light text-center"
-        id="projects"
-      >
+      <section class="blb-projects blb-section text-center" id="projects">
         <div class="container">
           <h2 class="display-3 mb-3">My Projects</h2>
           <p class="mb-3">Some of the recent projects that I have built.</p>
           <div class="row">
             <div class="col-md-6">
               <!-- Start project -->
-              <div class="card mb-3 shadow">
+              <div class="card mb-5 shadow">
                 <img
                   src="/assets/full-stack-tasks-bd8e04b3.jpg"
                   alt=""
@@ -263,7 +288,7 @@
             </div>
             <div class="col-md-6">
               <!-- Start project -->
-              <div class="card mb-3 shadow">
+              <div class="card mb-5 shadow">
                 <img
                   src="/assets/billiard-ball-quiz-34183074.jpg"
                   alt=""
@@ -310,23 +335,6 @@
         </div>
       </section>
 
-      <!-- About -->
-      <section class="blb-about blb-section" id="about">
-        <div class="container about-content">
-          <h2 class="display-3 text-center mb-3">About Me</h2>
-          <p class="mb-3">
-            Hi there! I am a 12+ year veteran in the IT industry. I have been
-            learning web development on the side for a few of those years. Now I
-            am anxious to make the jump into web development career!
-          </p>
-          <p>
-            Outside of work, some of my favorite things to do are spending time
-            with my family, watching or playing sports (baseball and racing
-            mainly), playing pool, and playing the guitar.
-          </p>
-        </div>
-      </section>
-
       <!-- Contact form -->
       <section
         class="blb-contact bg-light text-center blb-section"
@@ -365,11 +373,15 @@
                 id="message"
                 class="form-control"
                 placeholder="Your message"
+                rows="5"
                 required
               ></textarea>
             </div>
             <div class="d-flex justify-content-center mb-3">
-              <div class="g-recaptcha" data-sitekey="6LeNvM4oAAAAAHQC6kapYo3bMwHtrONl0j2gVza9"></div>
+              <div
+                class="g-recaptcha"
+                data-sitekey="6LeNvM4oAAAAAHQC6kapYo3bMwHtrONl0j2gVza9"
+              ></div>
             </div>
             <div class="mb-3 d-grid d-md-flex justify-content-md-center">
               <button class="btn btn-primary btn-lg" type="submit">
@@ -389,13 +401,13 @@
             <a class="text-light" href="#home">Home</a>
           </span>
           <span class="text-center mx-3">
+            <a class="text-light" href="#about">About Me</a>
+          </span>
+          <span class="text-center mx-3">
             <a class="text-light" href="#tech">Tech Stack</a>
           </span>
           <span class="text-center mx-3">
             <a class="text-light" href="#projects">My Projects</a>
-          </span>
-          <span class="text-center mx-3">
-            <a class="text-light" href="#about">About Me</a>
           </span>
           <span class="text-center mx-3">
             <a class="text-light" href="#contact">Contact Me</a>
@@ -451,6 +463,11 @@
           >
           <a
             class="blb-mobile-menu-link list-group-item list-group-item-action py-3"
+            href="#about"
+            >About Me</a
+          >
+          <a
+            class="blb-mobile-menu-link list-group-item list-group-item-action py-3"
             href="#tech"
             >Tech Stack</a
           >
@@ -458,11 +475,6 @@
             class="blb-mobile-menu-link list-group-item list-group-item-action py-3"
             href="#projects"
             >Projects</a
-          >
-          <a
-            class="blb-mobile-menu-link list-group-item list-group-item-action py-3"
-            href="#about"
-            >About Me</a
           >
           <a
             class="blb-mobile-menu-link list-group-item list-group-item-action py-3"
