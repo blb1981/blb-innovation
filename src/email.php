@@ -1,27 +1,18 @@
 <?php
 
-echo 'hey';
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use Dotenv\Dotenv;
 
-require './vendor/autoload.php';
+require '../vendor/autoload.php';
 
 $dotenv = Dotenv::createImmutable('../');
 $dotenv->load();
-
-echo $_ENV['EMAIL_SUBJECT'];
-
-
-
-
 
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 // $recaptcha_response = $_POST['g-recaptcha-response'];
-
 
 $mail = new PHPMailer(true);
 
@@ -40,5 +31,5 @@ $mail->Body = $message;
 
 $mail->send();
 
-echo 'Email Sent!';
-// header("Location: sent.html");
+// echo 'Email Sent!';
+header("Location: email-sent.html");
