@@ -33,3 +33,4 @@ $mail->send();
 
 echo 'Email Sent!';
 // header("Location: sent.html");
+// unnecessary
