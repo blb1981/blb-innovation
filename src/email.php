@@ -12,7 +12,27 @@ $dotenv->load();
 $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
-// $recaptcha_response = $_POST['g-recaptcha-response'];
+$recaptcha_response = $_POST['g-recaptcha-response'];
+
+if (!$name) {
+  echo 'Please provide your name.';
+  exit;
+}
+
+if (!$email) {
+  echo 'Please provide your email address.';
+  exit;
+}
+
+if (!$message) {
+  echo 'Please provide a message with your email.';
+  exit;
+}
+
+if (!$recaptcha_response) {
+  echo 'Please check the reCAPTCHA checkbox.';
+  exit;
+}
 
 $mail = new PHPMailer(true);
 
@@ -31,5 +51,4 @@ $mail->Body = $message;
 
 $mail->send();
 
-// echo 'Email Sent!';
 header("Location: email-sent.html");

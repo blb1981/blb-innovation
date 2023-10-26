@@ -1,9 +1,16 @@
 const path = require('path')
+const { resolve } = require('path')
 import { viteStaticCopy } from 'vite-plugin-static-copy'
 
 export default {
   root: path.resolve(__dirname, 'src'),
   build: {
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'src/index.html'),
+        other: resolve(__dirname, 'src/email-sent.html'),
+      },
+    },
     outDir: '../dist',
   },
   server: {
@@ -12,10 +19,6 @@ export default {
   plugins: [
     viteStaticCopy({
       targets: [
-        {
-          src: 'email-sent.html',
-          dest: '.',
-        },
         {
           src: 'email.php',
           dest: '.',
