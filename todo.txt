@@ -1,0 +1,6 @@
+Mobile menu content
+Add starter pack from Bootstrap website
+TODO: Add custom styling
+TODO: Determine projects to add and grab screenshots
+TODO: Turn into React project ??
+TODO: Write copy

@@ -4,29 +4,32 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar bg-primary navbar-expand-md fixed-top shadow">
+    <nav class="navbar bg-primary navbar-expand-md fixed-top shadow py-2">
       <div class="container">
-        <a href="#" class="navbar-brand">
-          <img src="./images/blb-logo-light.svg" alt="Logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
+        <a class="navbar-brand link-light" href="#home">Brandon Bland</a>
+        <span
+          class="d-inline-block d-md-none bb-nav-toggle"
           data-bs-toggle="offcanvas"
           data-bs-target="#mobileMenu"
           aria-controls="mobileMenu"
         >
-          Button
-        </button>
+          <i class="bi bi-list"></i>
+        </span>
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -80,7 +83,7 @@
       </section>
 
       <!-- Tech Stack -->
-      <section class="tech" id="tech">
+      <section class="blb-tech blb-section" id="tech">
         <div class="container">
           <h2 class="display-3 text-center">My Tech Stack</h2>
           <p class="text-center">
@@ -195,7 +198,10 @@
       </section>
 
       <!-- Projects -->
-      <section class="projects bg-light text-center" id="projects">
+      <section
+        class="blb-projects blb-section bg-light text-center"
+        id="projects"
+      >
         <div class="container">
           <h2 class="display-3">My Projects</h2>
           <p>
@@ -219,9 +225,13 @@
                     exercitationem eaque, natus quaerat corrupti ipsa!
                   </p>
                   <div class="card-text d-flex justify-content-evenly mb-3">
-                    <a href="#" class="btn btn-outline-primary">View code</a>
-                    <a href="#" class="btn btn-outline-primary"
-                      >View Live Site</a
+                    <a href="#" class="btn btn-outline-primary">
+                      <span><i class="bi bi-code-slash"></i></span>
+                      View Code</a
+                    >
+                    <a href="#" class="btn btn-outline-primary">
+                      <span><i class="bi bi-display"></i></span>
+                      View Live Site</a
                     >
                   </div>
                   <div class="card-text text-center">
@@ -243,86 +253,16 @@
             </div>
             <div class="col-md-6">
               <!-- Start project -->
-              <div class="card mb-3">
-                <img
-                  src="images/projects/billiard-ball-quiz.png"
-                  alt=""
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Billiard Ball Color Quiz</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quisquam doloribus expedita itaque harum quasi
-                    exercitationem eaque, natus quaerat corrupti ipsa!
-                  </p>
-                  <div class="card-text d-flex justify-content-evenly mb-3">
-                    <a href="#" class="btn btn-outline-primary">View code</a>
-                    <a href="#" class="btn btn-outline-primary"
-                      >View Live Site</a
-                    >
-                  </div>
-                  <div class="card-text text-center">
-                    <span class="badge rounded-pill text-bg-success"
-                      >Laravel</span
-                    >
-                    <span class="badge rounded-pill text-bg-success"
-                      >React</span
-                    >
-                    <span class="badge rounded-pill text-bg-success"
-                      >Full-stack</span
-                    >
-                    <span class="badge rounded-pill text-bg-success"
-                      >MaterialUI</span
-                    >
-                  </div>
-                </div>
-              </div>
             </div>
             <div class="col-md-6">
               <!-- Start project -->
-              <div class="card mb-3">
-                <img
-                  src="images/projects/full-stack-tasks.png"
-                  alt=""
-                  class="card-img-top"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Full Stack Tasks</h5>
-                  <p class="card-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Quisquam doloribus expedita itaque harum quasi
-                    exercitationem eaque, natus quaerat corrupti ipsa!
-                  </p>
-                  <div class="card-text d-flex justify-content-evenly mb-3">
-                    <a href="#" class="btn btn-outline-primary">View code</a>
-                    <a href="#" class="btn btn-outline-primary"
-                      >View Live Site</a
-                    >
-                  </div>
-                  <div class="card-text text-center">
-                    <span class="badge rounded-pill text-bg-success"
-                      >Laravel</span
-                    >
-                    <span class="badge rounded-pill text-bg-success"
-                      >React</span
-                    >
-                    <span class="badge rounded-pill text-bg-success"
-                      >Full-stack</span
-                    >
-                    <span class="badge rounded-pill text-bg-success"
-                      >MaterialUI</span
-                    >
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- About -->
-      <section class="about" id="about">
+      <section class="blb-about blb-section" id="about">
         <div class="container">
           <h2 class="display-3 text-center">About Me</h2>
           <p>
@@ -344,7 +284,10 @@
       </section>
 
       <!-- Contact form -->
-      <section class="contact bg-light text-center" id="contact">
+      <section
+        class="blb-contact bg-light text-center blb-section"
+        id="contact"
+      >
         <div class="container">
           <h2 class="display-3">Contact Me</h2>
           <hr />
@@ -397,10 +340,12 @@
       class="offcanvas offcanvas-start"
       tabindex="-1"
       id="mobileMenu"
-      aria-labelledby="offcanvasExampleLabel"
+      aria-labelledby="mobileMenuLabel"
     >
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <h4 class="offcanvas-title display-4" id="mobileMenuLabel">
+          Brandon Bland
+        </h4>
         <button
           type="button"
           class="btn-close"
@@ -409,27 +354,37 @@
         ></button>
       </div>
       <div class="offcanvas-body">
-        <div>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
-        </div>
-        <div class="dropdown mt-3">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            data-bs-toggle="dropdown"
+        <div class="list-group list-group-flush">
+          <a
+            class="bb-mobile-menu-link list-group-item list-group-item-action py-3"
+            href="#home"
+            >Home</a
           >
-            Dropdown button
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+          <a
+            class="bb-mobile-menu-link list-group-item list-group-item-action py-3"
+            href="#tech"
+            >Tech Stack</a
+          >
+          <a
+            class="bb-mobile-menu-link list-group-item list-group-item-action py-3"
+            href="#projects"
+            >Projects</a
+          >
+          <a
+            class="bb-mobile-menu-link list-group-item list-group-item-action py-3"
+            href="#about"
+            >About Me</a
+          >
+          <a
+            class="bb-mobile-menu-link list-group-item list-group-item-action py-3"
+            href="#contact"
+            >Contact Me</a
+          >
         </div>
       </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./main.js"></script>
   </body>
 </html>
