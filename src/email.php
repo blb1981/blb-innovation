@@ -11,6 +11,8 @@ require '../vendor/autoload.php';
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
 
+echo $_ENV['EMAIL_SUBJECT'];
+
 
 
 
