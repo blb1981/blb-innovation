@@ -6,7 +6,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use Dotenv\Dotenv;
 
-require '../vendor/autoload.php';
+require './vendor/autoload.php';
 
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->load();
