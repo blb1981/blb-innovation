@@ -1,10 +1,8 @@
 Mobile menu content
 Add starter pack from Bootstrap website
-TODO: Add custom styling
+Add custom styling
 TODO: Determine projects to add and grab screenshots
-TODO: Turn into React project ??
-TODO: Write copy
+TODO: Finish writing copy
 TODO: Favicon
-TODO: Redirect after email
-TODO: Styling for background picture
-TODO: Underline hover effect for navbar
+Redirect after email
+TODO: Underline hover effect for navbar ??

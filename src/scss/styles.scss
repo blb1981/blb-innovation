@@ -8,6 +8,7 @@ $light: $gray-200;
 
 // Typography
 $font-family-sans-serif: 'Lato', -apple-system, sans-serif;
+$font-size-base: 1.125rem;
 
 // Other
 
@@ -55,7 +56,7 @@ $border-radius-pill: 0;
 }
 
 .blb-me-img {
-  width: min(100%, 20rem);
+  width: min(100%, 15rem);
   display: inline;
   position: relative;
   margin: 5px;
@@ -68,6 +69,7 @@ $border-radius-pill: 0;
 
 @media screen and (min-width: 768px) {
   .blb-me-img {
+    width: min(100%, 20rem);
     border: 0;
   }
 
@@ -92,5 +94,22 @@ $border-radius-pill: 0;
 .blb-tech-card {
   img {
     max-width: 3rem;
+  }
+}
+
+// .blb-icons {
+//   color: red;
+// }
+
+i[class^='fa'] {
+  color: $light;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .project img {
+    height: 18rem;
+    object-fit: cover;
+    object-position: top;
   }
 }
