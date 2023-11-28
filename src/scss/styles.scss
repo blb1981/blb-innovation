@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Kalam:wght@400&display=swap');
 
 // Colors
 $primary: #243751;
@@ -111,5 +111,18 @@ i[class^='fa'] {
     height: 18rem;
     object-fit: cover;
     object-position: top;
+  }
+}
+
+.hello {
+  font-family: 'Kalam';
+  font-size: 3rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .hello {
+    text-align: left;
+    font-size: 4rem;
   }
 }
